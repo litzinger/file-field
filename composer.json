@@ -1,0 +1,21 @@
+{
+  "name": "litzinger/file_field",
+  "type": "library",
+  "description": "File Field library for ExpressionEngine 3",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Brian Litzinger",
+      "email": "litzinger@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "FileField\\": "src/"
+    }
+  },
+  "minimum-stability": "dev"
+}
