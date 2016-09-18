@@ -69,7 +69,7 @@ class FileField
     {
         $this->fieldName = $fieldName;
         $this->fieldValue = $fieldValue;
-        $this->settings = $settings;
+        $this->settings = $this->configureOptions($settings);
     }
 
     /**
@@ -90,5 +90,20 @@ class FileField
         $fieldView = preg_replace('/<img class="hidden" id="(.*?)"/', '<img class="hidden" id="'. $fieldId .'"', $fieldView);
 
         return $fieldView;
+    }
+
+    private function configureOptions(Array $options)
+    {
+        $resolver = new OptionsResolver();
+        $resolver
+            ->setDefaults(array(
+                'allowed_directories' => '',
+                'field_content_type' => 'all',
+                'num_existing' => 0,
+                'show_existing' => 'n',
+            ))
+        ;
+
+        return $resolver->resolve($options);
     }
 }
