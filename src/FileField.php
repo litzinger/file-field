@@ -3,6 +3,7 @@
 namespace FileField;
 
 use File_ft;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
  * ExpressionEngine FileField Class
