@@ -1,5 +1,5 @@
 {
-  "name": "litzinger/file_field",
+  "name": "litzinger/file-field",
   "type": "library",
   "description": "File Field library for ExpressionEngine 3",
   "license": "MIT",
@@ -10,7 +10,8 @@
     }
   ],
   "require": {
-    "php": ">=5.4"
+    "php": ">=5.4",
+    "symfony/options-resolver": "3.1.*"
   },
   "autoload": {
     "psr-4": {
