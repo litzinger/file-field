@@ -15,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "FileField\\": "src/"
+      "Litzinger\\FileField\\": "src/"
     }
   },
   "minimum-stability": "dev"

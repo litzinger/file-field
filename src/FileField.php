@@ -1,6 +1,6 @@
 <?php
 
-namespace FileField;
+namespace Litzinger\FileField;
 
 use File_ft;
 use Symfony\Component\OptionsResolver\OptionsResolver;
