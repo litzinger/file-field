@@ -89,6 +89,7 @@ class FileField
         // This is for fields that contain array data, e.g. field[name]
         $fieldView = preg_replace('/data-input-image=\'(.*?)\'/', 'data-input-image="'. $fieldId .'"', $fieldView);
         $fieldView = preg_replace('/<img class="hidden" id="(.*?)"/', '<img class="hidden" id="'. $fieldId .'"', $fieldView);
+        $fieldView = preg_replace('/id="(.*?)"/', 'id="'. $fieldId .'"', $fieldView);
 
         return $fieldView;
     }
