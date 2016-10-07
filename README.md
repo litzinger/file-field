@@ -15,7 +15,7 @@ $fieldValue is the saved value in the database, usually {field_dir_1}something.p
 $settings is an array of settings required for the native EE File_ft class
 
 ```
-$fileField = new FileField($fieldName, $fieldValue, $setings);
+$fileField = new FileField($fieldName, $fieldValue, $settings);
 $options .= '<div class="setting-txt"><em>Image</em></div>' . $fileField->render();
 ```
 
