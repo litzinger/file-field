@@ -1,3 +1,7 @@
+```
+composer require litzinger/file-field
+```
+
 This is a wrapper class to generate a fully functioning file field type within the ExpressionEngine 3 control panel (or front-end). It uses the native File_ft class to generate all the necessary HTML markup and JavaScript to render a fully functioning file field anywhere in the control panel. Its ideal for usage within 3rd party add-ons that need to save images as form options.
 # Usage
 
@@ -16,3 +20,4 @@ $options .= '<div class="setting-txt"><em>Image</em></div>' . $fileField->render
 
 - Add Symfony's OptionsResolver to validate the $settings array
 - Add compatibility with the Treasury field type?
+- Add compatibility with the Assets field type?
