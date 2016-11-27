@@ -41,7 +41,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  */
 
 // Load the EE files that we're using
-require_once APPPATH.'fieldtypes/EE_fieldtype.php';
+require_once APPPATH.'fieldtypes/EE_Fieldtype.php';
 require_once PATH_ADDONS.'file/ft.file.php';
 
 class FileField
