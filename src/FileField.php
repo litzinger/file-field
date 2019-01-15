@@ -78,7 +78,8 @@ class FileField
      */
     public function render()
     {
-        $fieldId = url_title($this->fieldName);
+        
+        $fieldId = ee('Format')->make('Text', $this->fieldName)->urlSlug();
         $fileFt = new File_ft;
         $fileFt->settings = $this->settings;
         $fileFt->field_name = $this->fieldName;
