@@ -15,29 +15,27 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  * @link        http://boldminded.com
  * @license
  *
- * Copyright (c) 2015. BoldMinded, LLC
- * All rights reserved.
+ *  MIT License
  *
- * This source is commercial software. Use of this software requires a
- * site license for each domain it is used on. Use of this software or any
- * of its source code without express written permission in the form of
- * a purchased commercial or other license is prohibited.
+ *  Copyright (c) 2016 Brian Litzinger
  *
- * THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
- * KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
- * PARTICULAR PURPOSE.
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the "Software"), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
  *
- * As part of the license agreement for this software, all modifications
- * to this source must be submitted to the original author for review and
- * possible inclusion in future releases. No compensation will be provided
- * for patches, although where possible we will attribute each contribution
- * in file revision notes. Submitting such modifications constitutes
- * assignment of copyright to the original author (Brian Litzinger and
- * BoldMinded, LLC) for such modifications. If you do not wish to assign
- * copyright to the original author, your license to  use and modify this
- * source is null and void. Use of this software constitutes your agreement
- * to this clause.
+ *  The above copyright notice and this permission notice shall be included in all
+ *  copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ *  SOFTWARE.
  */
 
 // Load the EE files that we're using
