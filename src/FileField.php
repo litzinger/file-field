@@ -3,7 +3,6 @@
 namespace Litzinger\FileField;
 
 use File_ft;
-use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
  * ExpressionEngine FileField Class
@@ -64,7 +63,7 @@ class FileField
      * @param $fieldValue
      * @param array $settings
      */
-    public function __construct($fieldName, $fieldValue, $settings = array())
+    public function __construct($fieldName, $fieldValue, $settings = [])
     {
         $this->fieldName = $fieldName;
         $this->fieldValue = $fieldValue;
@@ -76,7 +75,6 @@ class FileField
      */
     public function render()
     {
-        
         $fieldId = ee('Format')->make('Text', $this->fieldName)->urlSlug();
         $fileFt = new File_ft;
         $fileFt->settings = $this->settings;
@@ -95,16 +93,11 @@ class FileField
 
     private function configureOptions(Array $options)
     {
-        $resolver = new OptionsResolver();
-        $resolver
-            ->setDefaults(array(
-                'allowed_directories' => '',
-                'field_content_type' => 'all',
-                'num_existing' => 0,
-                'show_existing' => 'n',
-            ))
-        ;
-
-        return $resolver->resolve($options);
+        return array_replace([
+            'allowed_directories' => '',
+            'field_content_type' => 'all',
+            'num_existing' => 0,
+            'show_existing' => 'n',
+        ], $options);
     }
 }
