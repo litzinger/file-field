@@ -9,6 +9,9 @@
       "email": "litzinger@gmail.com"
     }
   ],
+  "autoload": {
+        "psr-4": {"Litzinger\\FileField\\": "src/"}
+    },
   "require": {
     "php": ">=5.5.9"
   },
